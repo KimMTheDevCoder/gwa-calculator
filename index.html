@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GWA Calc 2026 | Professional</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>VibePC | GWA Pro 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container animate-fade">
+    <div class="glass-container animate-in">
         <header>
-            <h1>📊 GWA Calculator</h1>
-            <p>Your academic tool for 2026</p>
+            <h1>✨ GWA Calculator</h1>
+            <p>Compute your grades with style.</p>
         </header>
 
-        <div class="card">
-            <div class="table-wrapper">
-                <table>
+        <div class="calculator-body">
+            <div class="table-container">
+                <table id="gwa-table">
                     <thead>
                         <tr>
                             <th>Subject</th>
@@ -25,24 +26,25 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody id="rows">
+                    <tbody id="rows-area">
                         </tbody>
                 </table>
             </div>
 
-            <div class="actions">
-                <button id="addBtn" class="secondary-btn">+ Add Row</button>
-                <button id="calcBtn" class="primary-btn">Calculate GWA</button>
+            <div class="button-group">
+                <button id="add-row-btn" class="btn-secondary"><span>+</span> Add Subject</button>
+                <button id="calc-btn" class="btn-primary">Calculate Now</button>
             </div>
         </div>
 
-        <div id="result-box" class="result-card hidden">
-            <span>Your Final GWA</span>
-            <h2 id="final-gwa">1.00</h2>
-            <p id="remark-msg"></p>
+        <div id="result-display" class="result-card hidden">
+            <span class="label">Your General Weighted Average</span>
+            <h2 id="gwa-output">0.00</h2>
+            <div id="status-badge" class="badge">Checking...</div>
+            <p id="remark-text"></p>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
