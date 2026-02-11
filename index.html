@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Calc 2026 | Professional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container animate-fade">
+        <header>
+            <h1>📊 GWA Calculator</h1>
+            <p>Your academic tool for 2026</p>
+        </header>
+
+        <div class="card">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Units</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="rows">
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="actions">
+                <button id="addBtn" class="secondary-btn">+ Add Row</button>
+                <button id="calcBtn" class="primary-btn">Calculate GWA</button>
+            </div>
+        </div>
+
+        <div id="result-box" class="result-card hidden">
+            <span>Your Final GWA</span>
+            <h2 id="final-gwa">1.00</h2>
+            <p id="remark-msg"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

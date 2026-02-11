@@ -1,0 +1,63 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+
+body { background: var(--bg); color: var(--text); display: flex; justify-content: center; padding: 20px; }
+
+.container { width: 100%; max-width: 500px; margin-top: 40px; }
+
+/* ANIMATION: Fade In */
+.animate-fade { animation: fadeIn 0.8s ease-out; }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+header { text-align: center; margin-bottom: 2rem; }
+
+.card { background: var(--card); padding: 1.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+table { width: 100%; border-collapse: collapse; }
+th { font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; padding-bottom: 10px; }
+
+/* Form Elements */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1); }
+
+/* Buttons */
+.actions { display: flex; gap: 10px; margin-top: 20px; }
+button { flex: 1; padding: 12px; border-radius: 12px; border: none; font-weight: bold; cursor: pointer; transition: transform 0.2s, background 0.3s; }
+button:active { transform: scale(0.95); }
+
+.primary-btn { background: var(--primary); color: white; }
+.secondary-btn { background: #f1f5f9; color: #475569; }
+
+/* Result Animation */
+.result-card {
+    margin-top: 20px;
+    text-align: center;
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #dbeafe;
+    transition: 0.5s;
+}
+.hidden { display: none; opacity: 0; }
+.show { display: block; animation: slideUp 0.5s forwards; }
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
