@@ -72,7 +72,7 @@ calcBtn.onclick = () => {
         if (gwa <= 1.25) {
             badge.innerText = "PRESIDENT'S LISTER";
             badge.className = "badge pass";
-            remark.innerText = "Grades that touch the heavens! Keep shining. ✨";
+            remark.innerText = "Grades that touch the heavens! Keep shining. ";
         } else if (gwa <= 1.75) {
             badge.innerText = "DEAN'S LISTER";
             badge.className = "badge pass";
@@ -80,11 +80,11 @@ calcBtn.onclick = () => {
         } else if (gwa <= 3.0) {
             badge.innerText = "PASSED";
             badge.className = "badge pass";
-            remark.innerText = "Good job! You've successfully passed the semester. ✅";
+            remark.innerText = "Good job! You've successfully passed the semester.";
         } else {
             badge.innerText = "FAILED / NEEDS IMPROVEMENT";
             badge.className = "badge fail";
-            remark.innerText = "Don't give up. Failures are lessons in disguise. 💪";
+            remark.innerText = "Don't give up. Failures are lessons in disguise.";
         }
     } else {
         alert("Please enter valid grades and units before calculating.");
